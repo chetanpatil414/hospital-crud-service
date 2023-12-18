@@ -19,13 +19,13 @@ Navigate to Contents -> Eclipse -> SpringToolSuite4.ini.
 ## 5 Edit SpringToolSuite4.ini:
 Open SpringToolSuite4.ini in a text editor in terminal.
 
-open -a TextEdit SpringToolSuite4.ini
+    open -a TextEdit SpringToolSuite4.ini
 
 ## 6 Add the following lines:
 
  #Lombok Java Agent Configuration
  
--javaagent:/path/to/lombok.jar
+    -javaagent:/path/to/lombok.jar
 
 
 Make sure to replace /path/to/lombok.jar with the actual path to your Lombok JAR file.
