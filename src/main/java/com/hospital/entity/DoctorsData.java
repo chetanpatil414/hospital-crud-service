@@ -4,22 +4,18 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Data;
-import lombok.Setter;
 
 @Entity
 @Data
-@Setter
-public class AddPatient {
+@Table(name = "doctors_data")
+public class DoctorsData {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private String firstName;
-	private String lastName;
-	private String email;
-	private String phoneNo;
-	private String referral;
-	private String disease;
-	private String patientDescription;
-	private String drAssigned;
+	private String employeeId;
+	private String drName;
+	private String speciality;
+	
 }
